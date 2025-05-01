@@ -1,5 +1,8 @@
 # astro-remark-link-card
-适配astro的链接卡片样式，修改自：[](https://github.com/HidemaruOwO/remark-link-card/tree/main)
+适配astro的链接卡片样式，修改自：[gladevise/remark-link-card](https://github.com/HidemaruOwO/remark-link-card/tree/main)，原作者保留版权，侵删。
+
+## 效果
+![alt text](image.png)
 
 ## 背景
 1.原作者已经很久不维护了
@@ -26,4 +29,12 @@ export default defineConfig({
 })
 ```
 
+## 开始使用
+```
+pnpm add https://github.com/AoiMatsu/astro-remark-link-card.git
+```
 
+> 原作者的安装链接：
+> pnpm add remark-link-card
+
+后续使用步骤与原来完全一致，只是api部分多了一个base需要传递。
