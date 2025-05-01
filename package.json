@@ -21,7 +21,7 @@
 		"link",
 		"card"
 	],
-	"author": "seisho",
+	"author": "holouv",
 	"license": "MIT",
 	"homepage": "https://github.com/AoiMatsu/astro-remark-link-card",
 	"devDependencies": {
