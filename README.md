@@ -31,10 +31,14 @@ export default defineConfig({
 
 ## 开始使用
 ```
-pnpm add https://github.com/AoiMatsu/astro-remark-link-card.git
+pnpm add astro-remark-link-card
 ```
 
 > 原作者的安装链接：
 > pnpm add remark-link-card
 
+```astro
+import remarkLinkCard from "astro-remark-link-card";
+```
 后续使用步骤与原来完全一致，只是api部分多了一个base需要传递。
+
