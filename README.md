@@ -13,16 +13,18 @@
 1.index.js中 downloadImage 函数中，通过 response.headers.get('content-type') 获取 MIME 类型，并将其映射为常见扩展名（如 .png, .jpg）  
 2.动态读取 Astro 的 base 配置，只需要在你的astro项目中astro.config.mjs中显式传递base即可。
 ```
-import remarkLinkCard from 'remark-link-card'
+import remarkLinkCard from 'astro-remark-link-card'
+
+const base = "/XX仓库名XX"; // ✅ base配置放这里集中配置
 
 export default defineConfig({
-  base: "/Astro-blogs", // ✅ 你的 base 配置
+  base: base, 
   markdown: {
     remarkPlugins: [
       [remarkLinkCard, {
         shortenUrl: true,
         // 显式传递 base 配置
-        base: "/Astro-blogs"
+        base: base
       }],
     ],
   },
